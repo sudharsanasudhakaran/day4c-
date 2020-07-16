@@ -12,12 +12,12 @@ namespace codeFirstApproach.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-1386F6G\SQLEXPRESS;user id=sa;password=login;database=MyPersonDB");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-1386F6G; user id=sa;password=login;database=MyPersonDB");
         }
 
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Grade> Grades { get; set; }
+        public DbSet<Person> Customers { get; set; }
+        public DbSet<Student> Staffs { get; set; }
+        public DbSet<Grade> Sales { get; set; }
 
 
     }

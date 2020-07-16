@@ -4,7 +4,6 @@ using System.Text;
 
 namespace codeFirstApproach.Models
 {
-    //POCO
     public class Person
     {
         public int Id { get; set; }
